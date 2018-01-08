@@ -536,7 +536,6 @@ ifconfig-pool-persist ipp.txt" >> /etc/openvpn/server.conf
 		echo 'push "dhcp-option DNS 176.103.130.131"' >> /etc/openvpn/server.conf
 		;;
 	esac
-echo 'push "redirect-gateway def1 bypass-dhcp" '>> /etc/openvpn/server.conf
 echo "crl-verify crl.pem
 ca ca.crt
 cert server.crt
